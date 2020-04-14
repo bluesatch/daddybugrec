@@ -1,7 +1,101 @@
+/* colors */
+
+/* 
+220082 - navy
+ffb7b7 - melon 
+000000 - black
+00bfff - deep sky blue
+b70000 - dark candy apple red
+*/
+
 * { box-sizing: border-box; }
 
-body {
-    background: whitesmoke;
-}
+html { scroll-behavior: smooth; }
+
+body { background: whitesmoke; }
 
 /* get colors and get this page purty */
+
+a { 
+    color: #00bfff;
+    text-decoration: none; 
+}
+
+a:hover { color: #220082;}
+
+
+h2 {
+    color: #00bfff;
+}
+/* nav */
+
+nav {
+    position: relative;
+    min-height: 40px;
+    width: 100%;
+    /* margin-bottom: 10px; */
+    border-bottom: 3px solid #b70000;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.navbar ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    /* padding-left: none; */
+    list-style-type: none;
+    text-align: right;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+    font-family: 'PT Mono', monospace;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.headerbackground {
+    background: url('../media/shelf_noir_background.jpeg');
+    height: 1050px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    opacity: .80;
+}
+
+.textbox {
+    margin: 40px auto;
+    line-height: 4;
+    width: 80%;
+    height: 100%;
+}
+
+.textbox h1 {
+    text-align: center;
+    color: #220082;
+    font-family: 'Lakki Reddy', cursive;
+    font-size: calc(32px + (64 - 32) * ((100vw - 325px) / (1600 - 325)));
+    -webkit-text-stroke: 1px black;
+   
+}
+
+.textbox p {
+    text-align: center;
+    color: #ffb7b7;
+    font-family: 'PT Mono', monospace;
+    font-size: calc(16px + (32 - 16) * ((100vw - 325px) / (1600 - 325)));
+    -webkit-text-stroke: 1px black;
+  
+}
+
+.products img {
+    border: 2px solid #b70000;
+    border-radius: 5px;
+}
